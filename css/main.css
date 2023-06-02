@@ -1,4 +1,5 @@
-/*header*/
+/* header */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -27,16 +28,13 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
-/***
- 🟣 SmolCSS Snippet Styles
- */
+
 
 .smol-centering {
     display: grid;
     place-content: left;
     /* was centered*/
 }
-
 
 
 /* Additional demo styles from SmolCSS.dev
@@ -110,9 +108,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
-/***
- 🟣 SmolCSS Snippet Styles
- */
 
 .smol-unbreakable-box {
     --color-light: #E0D4F6;
@@ -135,10 +130,6 @@ body {
 }
 
 
-
-
-/* Additional demo styles from SmolCSS.dev
-   Not all styles may be needed for this pen */
 body>ul {
     list-style: none;
     margin: 0;
