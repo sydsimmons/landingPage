@@ -121,7 +121,7 @@ body {
     margin: 2rem auto;
     color: var(--color-dark);
     background-color: var(--color-light);
-    font-size: 1.15rem;
+    font-size: 1rem;
     /* Smol Responsive Padding FTW! */
     padding: clamp(.75rem, 3%, 2rem);
     /* Provide a max-width and prevent overflow */
