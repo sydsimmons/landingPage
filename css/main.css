@@ -1,11 +1,12 @@
 /* header */
 
 /* Box sizing rules */
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-}
+    box-sizing: border-box; 
+} 
 
 /* Remove default margin */
 body,
@@ -28,24 +29,11 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
-
-
 .smol-centering {
     display: grid;
-    place-content: left;
-    /* was centered*/
-}
-
-
-/* Additional demo styles from SmolCSS.dev
-   Not all styles may be needed for this pen */
-body>ul {
-    list-style: none;
-    margin: 0;
-
-    &:not([data-padding-unset]) {
-        padding: 0;
-    }
+    place-content: center;
+    /* was centered*/ 
+    
 }
 
 [class*="smol"]:not([data-component])>*:not([data-unstyled]) {
@@ -56,12 +44,15 @@ body>ul {
     font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: bold;
     text-align: center;
-    border-radius: 0.15em;
-    border: 1px solid;
-    /* 1px dashed */
+    /* was center */
+    border-radius: 0em;
+    border: 0px solid; 
+    width: 1000px;
+
 
     &:not([data-text]) {
         place-content: center;
+        /* was center */
     }
 
     &[data-text] {
@@ -70,44 +61,46 @@ body>ul {
     }
 }
 
-[data-container-style] {
-    outline: 2px solid #29344B;
+
+
+/* get connected*/ 
+.getConnected-centering {
+    display: grid;
+    place-content: center;
+    /* was centered*/ 
+    
 }
 
-/* 2px dotted #29344B; */
+[class*="getConnected"]:not([data-component])>*:not([data-unstyled]) {
+    display: grid;
+    padding: 1rem;
+    background-color: #675883;
+    color: #f9f7fd;
+    font-size: clamp(.8rem, .8vw, .8rem);
+    font-weight: normal; 
+    text-align: left;
+    /* was center */
+    border-radius: 0em;
+    border: 0px solid; 
+    width: 600px;
+    height: 35px;
+
+
+    &:not([data-text]) {
+        place-content: left;
+        /* was center */
+    }
+
+    &[data-text] {
+        font-size: 1.15rem;
+        text-align: left;
+    }
+}
+
+
 
 
 /* description */
-
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p {
-    margin: 0;
-}
-
-/* Set core body defaults */
-body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.65;
-    padding: 2rem;
-    background-color: #f5f2f7;
-    color: #29344B;
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-}
-
 
 .smol-unbreakable-box {
     --color-light: #E0D4F6;
@@ -125,59 +118,11 @@ body {
     word-break: break-word;
     /* Optional, not supported for all languages */
     hyphens: auto;
-    float: left;
+    float: center;
     /* aligns box to the left*/
 }
 
 
-body>ul {
-    list-style: none;
-    margin: 0;
-
-    &:not([data-padding-unset]) {
-        padding: 0;
-    }
-}
-
-[class*="smol"]:not([data-component])>*:not([data-unstyled]) {
-    display: grid;
-    padding: 1rem;
-    background-color: #E0D4F6;
-    color: #675883;
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: bold;
-    text-align: center;
-    /* was center */
-    border-radius: 0.15em;
-    border: 1px dashed;
-
-
-    &:not([data-text]) {
-        place-content: center;
-        /* was center */
-    }
-
-    &[data-text] {
-        font-size: 1.15rem;
-        text-align: left;
-    }
-}
-
-[data-container-style] {
-    outline: 2px dotted #29344B;
-}
-
-/*image */
-
-img {
-    height: 400px;
-    width: 400px;
-    background: #eaeaed;
-    border: 1px solid #9799a7;
-    float: right;
-    margin: 10px 1 0 20px;
-    padding: 10px;
-}
 
 /* submit buttion resume */
 
@@ -189,5 +134,12 @@ input[type=button],input[type=submit],input[type=reset] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer; 
-    float: left;
-}
+    float: center;
+} 
+
+
+/*image */
+
+
+
+
