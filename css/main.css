@@ -24,87 +24,17 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.65;
     padding: 2rem;
-    background-color: #f6f9fd;
+    background-color: #ffffff;
     color: #29344B;
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
-
-.smol-centering {
-    display: grid;
-    place-content: left;
-    /* was centered*/ 
-    
-}
-
-[class*="smol"]:not([data-component])>*:not([data-unstyled]) {
-    display: grid;
-    padding: 1rem;
-    background-color: #C3D0E0;
-    color: #4a6484;
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: bold;
-    text-align: center;
-    /* was center */
-    border-radius: 0em;
-    border: 0px solid; 
-    
-
-
-    &:not([data-text]) {
-        place-content: center;
-        /* was center */
-    }
-
-    &[data-text] {
-        font-size: 1.15rem;
-        text-align: left;
-    }
-}
-
-
-
-/* get connected*/ 
-.getConnected-centering {
-    display: grid;
-    place-content: center;
-    /* was centered*/ 
-    
-}
-
-[class*="getConnected"]:not([data-component])>*:not([data-unstyled]) {
-    display: grid;
-    padding: 1rem;
-    background-color: #675883;
-    color: #f9f7fd;
-    font-size: clamp(.8rem, .8vw, .8rem);
-    font-weight: normal; 
-    text-align: left;
-    /* was center */
-    border-radius: 0em;
-    border: 0px solid; 
-    width: 1300px;
-    height: 35px;
-
-
-    &:not([data-text]) {
-        place-content: left;
-        /* was center */
-    }
-
-    &[data-text] {
-        font-size: 1.15rem;
-        text-align: left;
-    }
-}
-
-
 
 
 /* description */
 
 .smol-unbreakable-box {
-    --color-light: #C3D0E0;
-    --color-dark: #4a6484;
+    --color-light: #ffffffb7;
+    --color-dark: #000000;
 
     margin: 2rem auto;
     color: var(--color-dark);
@@ -128,7 +58,7 @@ body {
 
 /* submit buttion resume */
 
-input[type=button],input[type=submit],input[type=reset] {
+.button {
     background-color: #4a6484;
     border: none;
     color: white;
@@ -139,8 +69,6 @@ input[type=button],input[type=submit],input[type=reset] {
     float: center;
 } 
 
-
-/*image */
 
 
 
