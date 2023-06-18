@@ -18,7 +18,7 @@ The link to the page didn't work on because you had it in html file
 </head>
 
 <body>
-<form action="https://formspree.io/f/mwkjgvjo" method="POST">
+<form action="https://formspree.io/f/mwkjgvjo" method="POST" id="hireMeFrm">
 
     <center>
         <div class="container">
@@ -32,7 +32,7 @@ The link to the page didn't work on because you had it in html file
     <tr>
         <td style="width: 5%; text-align: right;">Name &nbsp;</td>
         <td style="width: 20%;">
-            <input type="text" name="Name" placeholder="Name" value="" style="width: 100%;">
+            <input type="text" name="Name" placeholder="First and Last Name" value="" style="width: 100%;" required>
         </td>
 
     </tr>
@@ -45,7 +45,7 @@ The link to the page didn't work on because you had it in html file
     <tr>
         <td style="width: 5%; text-align: right;">Email &nbsp;</td>
         <td style="width: 20%;">
-            <input type="text" name="Email" placeholder="Email" value="" style="width: 100%;">
+            <input type="email" name="Email" placeholder="Email" value="" style="width: 100%;" required>
         </td>
     </tr>
         <td style="width: 5%; text-align: right;">Agency &nbsp;</td>
@@ -64,12 +64,26 @@ The link to the page didn't work on because you had it in html file
     <tr> 
         <td style="width: 7%;"> 
         <td style="width: 20%;" align=center>
-          <input type="submit" name="Finish" value="Finish">&nbsp;
+          <input type="submit" name="Finish" value="Finish" id="send" disabled>&nbsp;
         </td>
 </tr>
 </table>
 </form>
+<script>
+    const form = document.getElementById('hireMeFrm'),
+        send = document.getElementById('send'),
+        frmValid = form.reportValidity();
+        form.addEventListener('keyup', function(e) {
+            debugger;
+            if (form.reportValidity()) {
+                send.removeAttribute('disabled');
+            } 
+            else { 
+                send.setAttribute("disabled", true);
+            }
+        });
 
+</script>
 </body>
 
 </html>
