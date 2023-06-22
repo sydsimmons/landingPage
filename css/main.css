@@ -123,6 +123,9 @@ button {
     float: center;
 } 
 
+.box > div {
+  column-count: 2;
+}
 
 /* Container needed to position the button. Adjust the width as needed */
 .container {
