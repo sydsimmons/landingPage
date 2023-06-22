@@ -1,78 +1,63 @@
 <!DOCTYPE html>
 <!-- TODO: Add Dark Themes and light theme Defaults-->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sydney Simmons The Dev</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
 
-  <body>
-    <table> <!-- TODO: Get Rid of this table design all together it should be all CSS-->
-      <tr>
-        <!-- image   -->
-          <div class="container"><!-- TODO: Not Responsiveb-->
-            <img
-              src="images/landingPageImage.png"
-              alt="This is an image of Sydney Simmons"
-              width="1350"
-              height="500"
-              border="0"
-            />
-            <a href="hireNow.html">
-              <button class="btn">HIRE NOW</button>
-            </a>
-          </div>
-      </tr>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sydney Simmons The Dev</title>
+  <link rel="stylesheet" href="css/main.css" />
 
-      <tr>
-        <!-- description/ selling proposition/ what I offer   -->
-        <!-- Remove the blockquote and write some CSS that does this -->
-        <blockquote data-component class="smol-unbreakable-box">
-          <p>
-            <font size="6"> Here's Why You Should Hire Me </font>
-          </p>
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+</head>
 
-          <p>
-            By hiring me as a software developer, you can expect a dedicated,
-            skilled professional who is passionate about creating impactful
-            software solutions. I bring technical expertise, problem-solving
-            abilities, a strong work ethic, and a commitment to continuous
-            improvement. Together, we can drive innovation, deliver dynamic
-            software, and achieve <br />
-            success in our projects.
-          </p>
+<body>
+  <!-- TODO: Get Rid of this table design all together it should be all CSS-->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Sydney Simmons</h1>
+      <p>The Software Developer</p>
+      <a href="hireNow.html">
+        <button>Hire me</button>
+      </a>
+    </div>
+  </div>
 
-          <a
-            href="https://drive.google.com/file/d/1MYrDvx0FfQvX71HMQmArgrOswxbbZRdk/view?usp=sharing"
-          >
-            <button class="button">View Resume</button>
-          </a>
-          <br />
-          <p>Get Connected:</p>
-          <a href="https://www.linkedin.com/in/sydney-simmons-9503b025a/">
-            <img
-              src="images/linkedin_icon.png"
-              alt="This is my Linkedin"
-              width="70"
-              height="20"
-              border="0"
-            />
-          </a>
+  <!-- description/ selling proposition/ what I offer   -->
+  <!-- Remove the blockquote and write some CSS that does this -->
+  <div class="smol-unbreakable-box">
+    <p>
+      <font size="6"> Here's Why You Should Hire Me </font>
+    </p>
 
-          <br />
-        </blockquote>
-      </tr>
-    </table>
-<!-- Example of an hero -->
-    <div class="hero-image">
-        <div class="hero-text">
-          <h1>Sydney Simmons</h1>
-          <p>The Developer!!</p>
-          <button>Hire me</button>
-        </div>
-      </div>
-  </body>
+    <p>
+      By hiring me as a software developer, you can expect a dedicated,
+      skilled professional who is passionate about creating impactful
+      software solutions. I bring technical expertise, problem-solving
+      abilities, a strong work ethic, and a commitment to continuous
+      improvement. Together, we can drive innovation, deliver dynamic
+      software, and achieve <br />
+      success in our projects.
+    </p>
+
+    <a href="https://drive.google.com/file/d/1MYrDvx0FfQvX71HMQmArgrOswxbbZRdk/view?usp=sharing">
+      <button class="button">View Resume</button>
+    </a>
+    <br />
+    <p>Get Connected:</p>
+    <a href="https://www.linkedin.com/in/sydney-simmons-9503b025a/">
+      <img src="images/linkedin_icon.png" alt="This is my Linkedin" width="70" height="20" border="0" />
+    </a>
+
+    <br />
+  </div>
+
+</body>
+
 </html>

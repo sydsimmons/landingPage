@@ -53,12 +53,17 @@ body {
     background-color: #ffffff;
     color: #29344B;
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+} 
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 button {
   cursor: pointer;
-
 }
+
 
 /* Hero Section */
 .hero-image {
@@ -66,7 +71,7 @@ button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/landingPageImage.png");
 
   /* Set a specific height */
-  min-height: 30vh;
+  min-height: 55vh;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -80,7 +85,7 @@ button {
   text-align: center;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
   color: white;
 }
@@ -90,7 +95,7 @@ button {
     --color-light: #ffffffb7;
     --color-dark: #000000;
 
-    margin: 2rem auto;
+    margin: 2rem 3rem 2rem 3rem;
     color: var(--color-dark);
     background-color: var(--color-light);
     font-size: 1rem;
@@ -102,16 +107,39 @@ button {
     word-break: break-word;
     /* Optional, not supported for all languages */
     hyphens: auto;
-    float: center;
+    float: left;
     /* aligns box to the left*/
-    width: 1350px;
-    height: 300px;
+    min-width: 600px;
+    min-height: 300px;
 }
 
+/* box (in hireNow.html)*/
 
+.box {
+  --color-light: #a4a4a41e;
+  --color-dark: #000000;
 
-/* submit buttion resume */
-
+  margin: 2rem auto;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  font-size: 1rem;
+  /* Smol Responsive Padding FTW! */
+  padding: clamp(.75rem, 3%, 2rem);
+  /* Provide a max-width and prevent overflow */
+  /*width: min(60ch, 90%);*/
+  /* Help prevent overflow of long words/names/URLs */
+  word-break: break-word;
+  /* Optional, not supported for all languages */
+  hyphens: auto;
+  float: center;
+  /* aligns box to the left*/
+  width: 700px;
+  height: 400px;
+}
+.box > div {
+  column-count: 2;
+}
+/* buttion view resume */
 .button {
     background-color: #4a6484;
     border: none;
@@ -123,45 +151,29 @@ button {
     float: center;
 } 
 
+label {
+  border: blue 2px solid;
+  text-align: right; 
+  width: 100vw;
+}
 
-/* Container needed to position the button. Adjust the width as needed */
-.container {
-    position: relative;
-    width: 85%;
-  }
-  
-  /* Make the image responsive */
-  .container img {
-    width: 100%;
-    height: 400;
-  }
-  
-  /* Style the button and place it in the middle of the container/image */
-  .container .btn {
-    position: absolute;
-    top: 75%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .container .btn:hover {
-    background-color: black;
-  }
+.input {
+  background-color: #4a64842c;
+  border: none;
+  color: white;
+  padding: 2px 0px;
+  text-decoration: none;
+  margin: 4px 2px;
+  float: right;
+ 
+}
 
 input:invalid {
     border: 2px dashed red;
 }
   
 input:valid {
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.389);
 }
 
 
