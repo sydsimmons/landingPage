@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<!-- Missing medata data you didn't use emitt to start this
+    <!-- Missing medata data you didn't use emitt to start this
 The link to the page didn't work on because you had it in html file
  * Remove Table layout design
  * Add styles and metadata
@@ -13,77 +14,70 @@ The link to the page didn't work on because you had it in html file
 
 -->
     <title>
-        Hire Me 
+        Hire Me
     </title>
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-<form action="https://formspree.io/f/mwkjgvjo" method="POST" id="hireMeFrm">
+    <form action="https://formspree.io/f/mwkjgvjo" method="POST" id="hireMeFrm">
 
-    <center>
-        <div class="container">
-            <img src="images/landingPageImageV2.png" alt="This is an image of Sydney Simmons"
-            width="1350" height="500" border="0">
-        </div>    
-    </center>
-<br>
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Sydney Simmons</h1>
+                <p>The Developer!!</p>
+            </div>
+        </div>
+        <br />
 
-<table style="width: 50%; margin: 0px auto; padding-right: 10%;">
-    <tr>
-        <td style="width: 5%; text-align: right;">Name &nbsp;</td>
-        <td style="width: 20%;">
-            <input type="text" name="Name" placeholder="First and Last Name" value="" style="width: 100%;" required>
-        </td>
+        <div class="box">
+            <div>
+                <label for="name">Name:</label>
+                <input class="input" id="name" type="text" placeholder="First and Last Name" style="width: 50%;"
+                    required>
+            </div>
 
-    </tr>
-    <tr>
-        <td style="width: 5%; text-align: right;">Linkedin URL &nbsp;</td>
-        <td style="width: 20%;">
-            <input type="text" name="Linkedin" placeholder="Linkedin URL" value="" style="width: 100%;">
-        </td>
-    </tr>
-    <tr>
-        <td style="width: 5%; text-align: right;">Email &nbsp;</td>
-        <td style="width: 20%;">
-            <input type="email" name="Email" placeholder="Email" value="" style="width: 100%;" required>
-        </td>
-    </tr>
-        <td style="width: 5%; text-align: right;">Agency &nbsp;</td>
-        <td style="width: 20%;">
-            <input type="text" name="Agency" placeholder="Employment Agency" value="" style="width: 100%;">
-        </td>
-    <tr>
-        <td style="width: 5%; text-align: right;">Comments &nbsp;</td>
-        <td style="width: 20%;">
-            <textarea name="Comments" placeholder="Comments" rows="5" cols="20"></textarea>
-        </td>
+            <div>
+                <label for="email">Email:</label>
+                <input class="input" id="email" type="email" placeholder="Email" style="width: 50%;" required>
+            </div>
+            <br />
+            <div>
+                <label for="agency">Agency:</label>
+                <input class="input" id="agency" type="text" placeholder="Employment agency" style="width: 50%;">
+            </div>
+            <br />
+            <div>
+                <label for="linkedin">Linkedin URL:</label>
+                <input class="input" id="linkedin" type="text" placeholder="Linkedin URL" style="width: 50%;">
+            </div>
+            <br />
+            <br />
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea class="input" name="Comments" placeholder="Comments" rows="1" cols="38"></textarea>
+            </div>
+            <br />
+            <button id="send" disabled>Finish</button>
+        </div>
 
-    </tr>
-    <br>
-    <br>
-    <tr> 
-        <td style="width: 7%;"> 
-        <td style="width: 20%;" align=center>
-          <input type="submit" name="Finish" value="Finish" id="send" disabled>&nbsp;
-        </td>
-</tr>
-</table>
-</form>
-<script>
-    const form = document.getElementById('hireMeFrm'),
-        send = document.getElementById('send'),
-        frmValid = form.reportValidity();
-        form.addEventListener('keyup', function(e) {
+
+    </form>
+    <script>
+        const form = document.getElementById('hireMeFrm'),
+            send = document.getElementById('send'),
+            frmValid = form.reportValidity();
+        form.addEventListener('keyup', function (e) {
             debugger;
             if (form.reportValidity()) {
                 send.removeAttribute('disabled');
-            } 
-            else { 
+            }
+            else {
                 send.setAttribute("disabled", true);
             }
         });
 
-</script>
+    </script>
 </body>
 
 </html>
