@@ -1,104 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Missing medata data you didn't use emitt to start this
-    The link to the page didn't work on because you had it in html file
- * Add styles and metadata
- * Make sure it's responsive
- * Update 
- * Get rid of the submit and use a button
- * Button should be disabled until form is validate 
-    https://stackoverflow.com/questions/27829051/enable-submit-button-only-when-all-fields-are-filled
 
--->
-    <title>Hire Me</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hire Me</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/hireForm.css" />
+</head>
 
-  <body>
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1>Sydney Simmons</h1>
-        <p>The Developer!!</p>
-      </div>
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Sydney Simmons</h1>
+      <p>The Software Developer</p>
     </div>
+  </div>
 
-    <div class="box">
-      <form
-        action="https://formspree.io/f/mwkjgvjo"
-        method="POST"
-        id="hireMeFrm"
-      >
-        <div>
-          <label for="name">Name:</label>
-          <input
-            class="input"
-            id="name"
-            type="text"
-            placeholder="First and Last Name"
-            required
-          />
-        </div>
-
-        <div>
-          <label for="email">Email:</label>
-          <input
-            class="input"
-            id="email"
-            type="email"
-            placeholder="Email"
-            required
-          />
-        </div>
-        
-        <div>
-          <label for="agency">Agency:</label>
-          <input
-            class="input"
-            id="agency"
-            type="text"
-            placeholder="Employment agency"
-          />
-        </div>
-
-        <div>            
-          <label for="linkedin">Linkedin URL:</label>
-          <input
-            class="input"
-            id="linkedin"
-            type="text"
-            placeholder="Linkedin URL"
-          />
-        </div>
-        
-        <div>
-          <label for="comments">Comments:</label>
-          <textarea
-            class="input"
-            name="Comments"
-            placeholder="Comments"
-            rows="5"
-            cols="38"
-          ></textarea>
-        </div>
-        
-        <button id="send" disabled>Finish</button>
-      </form>    
-    </div>
+  <div class="contactForm">
+    <h1>Contact Form</h1>
+    <p>Interested in hiring Sydney Simmons as your software developer? </p>
+    <p>Please fill out this contact form to provide more information about your business inquire.</p>
+  </div>
+  <form action="https://formspree.io/f/mwkjgvjo" method="POST" id="hireMeFrm">
+    <input name="name" type="text" class="feedback-input" placeholder="First and Last Name" />
+    <input name="email" type="email" class="feedback-input" placeholder="Email" />
+    <input name="agency" type="text" class="feedback-input" placeholder="Employment Agency" />
+    <input name="linkedin" type="text" class="feedback-input" placeholder="Linkedin URL" />
+    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+    <button class="submit" id="send" disabled>Submit</button>
+  </form>
 
 
-    <script>
-      const form = document.getElementById("hireMeFrm"),
-        send = document.getElementById("send"),
-        frmValid = form.reportValidity();
-      form.addEventListener("keyup", function (e) {
-        debugger;
-        if (form.reportValidity()) {
-          send.removeAttribute("disabled");
-        } else {
-          send.setAttribute("disabled", true);
-        }
-      });
-    </script>
-  </body>
+
+
+  <script>
+    const form = document.getElementById("hireMeFrm"),
+      send = document.getElementById("send"),
+      frmValid = form.reportValidity();
+    form.addEventListener("keyup", function (e) {
+      debugger;
+      if (form.reportValidity()) {
+        send.removeAttribute("disabled");
+      } else {
+        send.setAttribute("disabled", true);
+      }
+    });
+  </script>
+</body>
+
 </html>
