@@ -117,9 +117,11 @@ button {
   hyphens: auto;
   float: center;
   /* aligns box to the left*/
+
   /*min-width: 500px;*/
   /*min-height: 300px;*/
 }
+
 
 
 .hireButton {
@@ -137,27 +139,6 @@ button {
   margin-top: 5px;
   font-weight: 600;
 }
-
-
-/* buttion view resume */
-.button {
-  width: 15%;
-  background-color: #8157db;
-  border-radius: 5px;
-  border: 0;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-decoration: none;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  cursor: pointer;
-  float: center;
-  font-weight: 600;
-}
-
-
-
 
 
 input:invalid {
