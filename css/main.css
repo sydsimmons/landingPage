@@ -8,13 +8,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-      --clr-text: #f7f8fd;
-      --clr-surface: #040611;
-      --clr-primary: #8157db;
-      --clr-secondary: #000000;
-      --clr-accent: #c357db;
-    }
+    --clr-text: #f7f8fd;
+    --clr-surface: #040611;
+    --clr-primary: #8157db;
+    --clr-secondary: #000000;
+    --clr-accent: #c357db;
+  }
 }
+
 /* header */
 
 /* Box sizing rules */
@@ -22,8 +23,8 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box; 
-} 
+  box-sizing: border-box;
+}
 
 /* Remove default margin */
 body,
@@ -32,7 +33,7 @@ h2,
 h3,
 h4,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 html {
@@ -47,13 +48,13 @@ img {
 
 /* Set core body defaults */
 body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.65;
-    background-color: #ffffff;
-    color: #29344B;
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-} 
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.65;
+  background-color: rgb(235, 235, 251);
+  color: #29344B;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
 
 .dark-mode {
   background-color: black;
@@ -64,6 +65,9 @@ button {
   cursor: pointer;
 }
 
+.line {
+  border-bottom: 3px solid #8157db;
+}
 
 /* Hero Section */
 .hero-image {
@@ -71,7 +75,7 @@ button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/landingPageImage.png");
 
   /* Set a specific height */
-  min-height: 55vh;
+  min-height: 50vh;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -85,41 +89,21 @@ button {
   text-align: center;
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 28%;
   transform: translate(-50%, -50%);
   color: white;
 }
+
 /* description */
 
 .smol-unbreakable-box {
-    --color-light: #ffffffb7;
-    --color-dark: #000000;
-
-    margin: 2rem 3rem 2rem 3rem;
-    color: var(--color-dark);
-    background-color: var(--color-light);
-    font-size: 1rem;
-    /* Smol Responsive Padding FTW! */
-    padding: clamp(.75rem, 3%, 2rem);
-    /* Provide a max-width and prevent overflow */
-    /*width: min(60ch, 90%);*/
-    /* Help prevent overflow of long words/names/URLs */
-    word-break: break-word;
-    /* Optional, not supported for all languages */
-    hyphens: auto;
-    float: left;
-    /* aligns box to the left*/
-    min-width: 600px;
-    min-height: 300px;
-}
-
-/* box (in hireNow.html)*/
-
-.box {
-  --color-light: #a4a4a41e;
+  --color-light: rgb(235, 235, 251);
   --color-dark: #000000;
 
-  margin: 2rem auto;
+  max-width: 1000px;
+  margin: 30px auto;
+  
+  /*margin: 3rem 10rem 2rem 10rem; */
   color: var(--color-dark);
   background-color: var(--color-light);
   font-size: 1rem;
@@ -133,52 +117,34 @@ button {
   hyphens: auto;
   float: center;
   /* aligns box to the left*/
-  width: 700px;
-  height: 400px;
-}
-.box > div {
-  column-count: 2;
-}
-/* buttion view resume */
-.button {
-    background-color: #4a6484;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer; 
-    float: center;
-} 
 
-.box > div {
-  column-count: 2;
+  /*min-width: 500px;*/
+  /*min-height: 300px;*/
 }
 
-label {
-  border: blue 2px solid;
-  text-align: right; 
-  width: 100vw;
-}
 
-.input {
-  background-color: #4a64842c;
-  border: none;
+
+.hireButton {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 60%;
+  background: #8157db;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
   color: white;
-  padding: 2px 0px;
-  text-decoration: none;
-  margin: 4px 2px;
-  float: right;
- 
+  font-size: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  transition: all 0.3s;
+  margin-top: 5px;
+  font-weight: 600;
 }
+
 
 input:invalid {
-    border: 2px dashed red;
+  border: 2px dashed red;
 }
-  
+
 input:valid {
   border: 2px solid rgba(0, 0, 0, 0.389);
 }
-
-
-
