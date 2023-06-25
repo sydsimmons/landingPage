@@ -1,15 +1,15 @@
 * {
     margin: 0px;
     padding: 0px;
-  }
-  
-  body {
+}
+
+body {
     background-color: rgb(235, 235, 251);
-  }
-  
-  /* title */
-  
-  .title {
+}
+
+/* title */
+
+.title {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -17,11 +17,11 @@
     font-weight: bold;
     font-family: 'Overpass Mono', monospace;
     text-decoration: underline;
-  }
-  
-  /* horizontal threline nav bar */
-  
-  .navbar {
+}
+
+/* horizontal threline nav bar */
+
+.navbar {
     width: 60px;
     display: block;
     position: absolute;
@@ -30,26 +30,27 @@
     padding: 8px 10px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
-  }
-  
-  .navbar div {
+}
+
+.navbar div {
     height: 5px !important;
     background: #fff;
     margin: 7px 0px 7px 0px;
     border-radius: 25px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
-  }
-  
-  .two {
+}
+
+.two {
     width: 35px;
-  }
-  
-  .three {
+}
+
+.three {
     width: 50px;
-  }
-  
-  .navbar:hover div {
+}
+
+.navbar:hover div {
     width: 60px;
-  }
-  
+}
+
+
