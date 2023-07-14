@@ -153,6 +153,10 @@ button {
   font-weight: 600;
 }
 
+button {
+  padding: 20px 0 15px 0;
+}
+
 
 input:invalid {
   border: 2px dashed red;
