@@ -9,28 +9,35 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/hireForm.css" />
   <link rel="stylesheet" href="css/navBar.css" />
+  <link rel="stylesheet" href="css/socialmedia.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
 
 <body>
   <div class="hero-image">
-    
+
     <nav role="navigation">
       <div id="menuToggle">
         <!--hidden checkbox is used as click reciever-->
         <input type="checkbox" />
-      
+
         <!--spans to act as a hamburger-->
         <span></span>
         <span></span>
         <span></span>
-        
-        <ul id="menu">
-          <a href="index.html"><li>Home</li></a>
-          <a href="https://drive.google.com/file/d/1MYrDvx0FfQvX71HMQmArgrOswxbbZRdk/view?usp=sharing"><li>View My Resume</li></a>
-          <a href="https://github.com/sydsimmons"><li>View My Work</li></a>
-          <a href="hireNow.html"><li>Hire Me</li></a>
-          <a href="https://qrco.de/be3zga"><li>Contact</li></a>
-          
+
+        <ul id="menu"> <!--- This is bad html, the a tag should be inside li -->
+          <!-- update this to the hire me form-->
+          <!--  Remove this and add the tag  use your social icons-->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="hireNow.html">Contact </a></li>
+          <li class="facebook"><a href="https://www.linkedin.com/in/sydney-simmons-9503b025a/"><i
+                class="fa fa-brands fa-linkedin fa-1x"></i> Linkedin</a></li>
+          <li class="twitter"><a href="https://github.com/sydsimmons"><i class="fa fa-brands fa-github fa-1x"></i>
+              GitHub</a></li>
         </ul>
       </div>
     </nav>
@@ -38,6 +45,7 @@
     <div class="hero-text">
       <h1>Sydney Simmons</h1>
       <p>The Software Developer</p>
+      
     </div>
   </div>
   <div class="line"></div>
