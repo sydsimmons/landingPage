@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire Me</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/hireForm.css" />
+    <link rel="stylesheet" href="css/navBar.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hire Me</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/hireForm.css" />
-  <link rel="stylesheet" href="css/navBar.css" />
-</head>
-
-<body>
-  <div class="hero-image">
-    <div class="navbar">
-      <div class="one"></div>
-      <div class="two"></div>
-      <div class="three"></div>
+  <body>
+    <div class="hero-image">
+      <div class="navbar">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+      <div class="hero-text">
+        <h1>Sydney Simmons</h1>
+        <p>The Software Developer</p>
+      </div>
     </div>
-    <div class="hero-text">
-      <h1>Sydney Simmons</h1>
-      <p>The Software Developer</p>
+    <div class="line"></div>
+
+    <div class="contactForm">
+      <h1>Get My Resume</h1>
+      <p>Interested in hiring Sydney Simmons as your software developer?</p>
+      <p>
+        Please fill out this contact form to provide more information about your
+        business inquire.
+      </p>
     </div>
-  </div>
-  <div class="line"></div>
+    <form action="https://formspree.io/f/mwkjgvjo" method="POST" id="hireMeFrm">
+      <input
+        name="name"
+        type="text"
+        class="feedback-input"
+        placeholder="First and Last Name"
+        title="First and Last Names"
+        required
+      />
+      <input
+        name="email"
+        type="email"
+        class="feedback-input"
+        placeholder="Email"
+      />
+      <input
+        name="agency"
+        type="text"
+        class="feedback-input"
+        placeholder="Employment Agency"
+      />
+      <input
+        name="linkedin"
+        type="text"
+        class="feedback-input"
+        placeholder="Linkedin URL"
+      />
+      <textarea
+        name="text"
+        class="feedback-input"
+        placeholder="Comment"
+      ></textarea>
+      <button class="submit" id="send" disabled>Next ></button>
+    </form>
 
-  <div class="contactForm">
-    <h1>Contact Form</h1>
-    <p>Interested in hiring Sydney Simmons as your software developer? </p>
-    <p>Please fill out this contact form to provide more information about your business inquire.</p>
-  </div>
-  <form action="https://formspree.io/f/mwkjgvjo" method="POST" id="hireMeFrm">
-    <input name="name" type="text" class="feedback-input" placeholder="First and Last Name" />
-    <input name="email" type="email" class="feedback-input" placeholder="Email" />
-    <input name="agency" type="text" class="feedback-input" placeholder="Employment Agency" />
-    <input name="linkedin" type="text" class="feedback-input" placeholder="Linkedin URL" />
-    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-    <button class="submit" id="send" disabled>Submit</button>
-  </form>
-
-
-
-
-  <script>
-    const form = document.getElementById("hireMeFrm"),
-      send = document.getElementById("send"),
-      frmValid = form.reportValidity();
-    form.addEventListener("keyup", function (e) {
-      debugger;
-      if (form.reportValidity()) {
-        send.removeAttribute("disabled");
-      } else {
-        send.setAttribute("disabled", true);
-      }
-    });
-  </script>
-</body>
-
+    <script>
+      const form = document.getElementById("hireMeFrm"),
+        send = document.getElementById("send"),
+        frmValid = form.reportValidity();
+      form.addEventListener("blur", function (e) {
+        debugger;
+        if (form.reportValidity()) {
+          send.removeAttribute("disabled");
+        } else {
+          send.setAttribute("disabled", true);
+        }
+      });
+    </script>
+  </body>
 </html>
