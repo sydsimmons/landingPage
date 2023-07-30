@@ -10,27 +10,43 @@
     <link rel="stylesheet" href="css/navBar.css" />
   </head>
 
-  <body>
-    <div class="hero-image">
-      <div class="navbar">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-      </div>
-      <div class="hero-text">
-        <h1>Sydney Simmons</h1>
-        <p>The Software Developer</p>
-      </div>
-    </div>
-    <div class="line"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hire Me</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/hireForm.css" />
+  <link rel="stylesheet" href="css/navBar.css" />
+</head>
 
-    <div class="contactForm">
-      <h1>Get My Resume</h1>
-      <p>Interested in hiring Sydney Simmons as your software developer?</p>
-      <p>
-        Please fill out this contact form to provide more information about your
-        business inquire.
-      </p>
+<body>
+  <div class="hero-image">
+
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--hidden checkbox is used as click reciever-->
+        <input type="checkbox" />
+
+        <!--spans to act as a hamburger-->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="https://drive.google.com/file/d/1MYrDvx0FfQvX71HMQmArgrOswxbbZRdk/view?usp=sharing"><li>View My Resume</li></a>
+          <a href="https://github.com/sydsimmons"><li>View My Work</li></a>
+          <a href="hireNow.html"><li>Hire Me</li></a>
+          <a href="https://qrco.de/be3zga"><li>Contact</li></a>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-text">
+      <h1>Sydney Simmons</h1>
+      <p>The Software Developer</p>
     </div>
     <form action="https://formspree.io/f/mwkjgvjo" method="POST" id="hireMeFrm">
       <input

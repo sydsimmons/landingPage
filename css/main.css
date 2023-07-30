@@ -73,7 +73,7 @@ button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/landingPageImage.png");
 
   /* Set a specific height */
-  min-height: 50vh;
+  min-height: 70vh;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -96,7 +96,7 @@ button {
 
 .smol-unbreakable-box {
   --color-light: rgb(235, 235, 251);
-  --color-dark: #000000;
+  --color-dark: #8157db;
 
   max-width: 1000px;
   margin: 30px auto;
