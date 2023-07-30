@@ -1,12 +1,12 @@
-* {
+/* Could cassade to other  */
+*{
     margin: 0px;
     padding: 0px;
 }
-
 body {
     background-color: rgb(235, 235, 251);
 }
-
+/* These will apply to not only the menu
 /* title */
 
 .title {
@@ -42,11 +42,11 @@ body {
 }
 
 .two {
-    width: 35px;
+    width: 25px;
 }
 
 .three {
-    width: 50px;
+    width: 35px;
 }
 
 .navbar:hover div {

@@ -4,6 +4,7 @@
   --clr-primary: #8157db;
   --clr-secondary: #000000;
   --clr-accent: #c357db;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,16 +25,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
-/* Remove default margin */
-body,
 h1,
 h2,
-h3,
-h4,
-p {
-  margin: 0;
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -51,14 +49,14 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.65;
-  background-color: rgb(235, 235, 251);
-  color: #29344B;
+  background-color: var(--clr-primary);
+  color: var(--clr-text);
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
 .dark-mode {
-  background-color: black;
-  color: white;
+  background-color: var(--color-dark);
+  color:var(--clr-text)
 }
 
 button {
@@ -159,4 +157,8 @@ input:invalid {
 
 input:valid {
   border: 2px solid rgba(0, 0, 0, 0.389);
+}
+
+button {
+  padding: 1em 0;
 }
